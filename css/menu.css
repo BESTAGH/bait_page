@@ -1,0 +1,131 @@
+/**********************/
+/*     mobile menu    */
+/**********************/
+
+.side-bar{
+  position: fixed;
+  top: 0;
+  bottom:0;
+  opacity:0;
+  width: 100vw;
+  padding: 2em 10% 2em;
+  background: black;
+  transition: opacity 500ms ease-out 5ms;
+  overflow-y: scroll;
+  z-index: 4;
+  pointer-events: none;
+  padding-top: 20vh;
+}
+.side-bar.visible{
+  opacity:1;
+  pointer-events: auto;
+}
+.side-bar li{
+  text-align: center;
+  font-size: 30px;
+  line-height: 1em;
+  list-style-type:none;
+  margin-bottom: 0.5em;
+}
+
+.main-menu{
+    padding: 0;
+    margin: 0;
+    text-align: justify;
+}
+
+.menu-item{
+    margin-top: 3vh;
+}
+
+@media only screen and (min-width: 400px) {
+
+    .menu-item{
+        margin-top: 6vh;
+    }
+}
+
+.toggle {
+  position:fixed;
+  width: 50px;
+  height: 50px;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 6;
+}
+
+.toggle .bar {
+  background-color: #FFF;
+  display: block;
+  width: 30px;
+  height: 4px;
+  border-radius: 100px;
+  border-color: white;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.toggle .bar:first-child {
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  transform: translateY(-10px);
+}
+.toggle .bar:nth-child(2) {
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(110px);
+  transform: translateY(10px);
+}
+
+.toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.toggle.x .bar:nth-child(2) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+
+
+
+/********************/
+/* widget facebooka */
+/********************/
+
+.fb-widget{
+    position:fixed;
+    width: 340px;
+    max-width: 90vw;
+    max-height: 90vh;
+    padding-top: 2px;
+    margin:0;
+    right: -220px;
+    bottom: -555px;
+    z-index:6;
+    background: #3B5998;
+    transition: right 500ms ease-in-out, bottom 500ms ease-in-out;
+}
+
+.fb-widget:hover{
+    right: 0px;
+    bottom: -5px;
+}
+
+.fb-widget .fb-top-bar{
+    cursor: pointer;
+}

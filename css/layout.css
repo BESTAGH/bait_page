@@ -1,0 +1,247 @@
+body{
+    background-color: #0b1238;
+    color: white;
+    font-size: 15px;
+}
+
+a, a:hover{
+    text-decoration: none;
+    color: #a3cc39;
+}
+
+.container-top{
+    margin-top:100vh;
+}
+
+#page-views{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+/* animacje przejścia */
+#page-views.ng-enter,
+#page-views.ng-leave{ 
+    opacity:0;
+}
+
+/* button with border*/
+.neon-button-border {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.8vw;
+    padding: 10px 60px;
+    /*text-transform: uppercase;*/
+    opacity: .75;
+    border: 3px solid #19bfd5;
+    background: none;
+    border-radius: 16px!important;
+    padding: 16px 24px;
+    background-color: rgba(0,0,0,0) !important;
+    color: #a3cc39;
+    font-size: 3rem;
+    cursor: pointer;
+    margin: 1.25rem 0;
+    box-shadow: 0 0 10px #19bfd5;
+    text-shadow: 0 0 5px #a3cc39!important;
+}
+
+.neon-button-border:hover{
+    opacity: 1;
+    color: rgba(187, 235, 89, 1)!important;
+    border: 3px solid #19bfd5;
+    box-shadow: 0 0 20px #19bfd5;
+}
+
+.neon-button-border.menu-button{
+    width: 300px;
+}
+
+.panel-heading{
+    cursor: pointer;
+}
+
+.panel{
+    border-color: #a3cc39;
+}
+
+.panel-body {
+    border-top-color: #a3cc39!important;
+    opacity: 0.7;
+}
+
+.panel, .panel-default{
+    background-color: rgba(0,0,0,0)!important;
+    color: white;
+}
+
+.panel-heading, .panel-heading{
+    background-color:#a3cc39!important;
+}
+
+.panel a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+/* elementy */
+.description{
+    margin: 2em auto;
+    left: 0;
+    right: 0;
+    max-width: 800px;
+    text-align: justify;
+}
+
+.footer{
+    padding-top: 2em;
+    padding-bottom: 3em;
+}
+
+.footer img{
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1em;
+    width: 80%;
+}
+
+.partners{
+    text-align: center;
+    background-color: white;
+    margin:0;
+    width:100%;
+    color: #0b1238;
+}
+
+.paragraph-container{
+    padding: 0 15px 0 15px;
+    text-align: justify;
+}
+
+
+/* subpage header */
+.page-header{
+    position: relative;
+    height: 70vh;
+    min-height: 600px;
+    border-bottom: none;
+    padding: 10em 0 3em 0;
+    margin:0;
+}
+.page-header p{
+    max-width: 500px;
+}
+.header-img{
+    position: absolute;
+    top:0;
+    right:0;
+    z-index: -1;
+    height: 90vh;
+}
+
+.header-description{
+    padding-top: 13vh;
+    text-align: justify;
+}
+
+.text-row{
+    text-align: justify !important;
+}
+
+.description-row{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.neon-h1{
+    font-size: 4em;
+    font-family: 'Nunito', sans-serif;
+    color: rgb(187, 235, 89);
+    text-shadow: 0px 0px 30px rgba(187, 235, 89, 1);
+    -webkit-text-stroke: 1px rgb(156, 203, 61);
+}
+
+/* menu buttons */
+
+.neon-button{
+    font-size: 6vh;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none !important;
+}
+
+.neon-button.pink{
+    color: rgba(0,0,0,0.85);
+    text-shadow: 0px 0px 30px rgba(226, 23, 141, 0.6);
+    -webkit-text-stroke: 1px #E2178D;
+}
+
+.neon-button.pink:hover {
+    color: #ec5db1;
+    text-shadow: 0px 0px 30px rgba(226, 23, 141, 1);
+    -webkit-text-stroke: 1px #E2178D;
+}
+
+.neon-button.yellow {
+    color: rgba(0,0,0,0.85);
+    text-shadow: 0px 0px 20px rgba(253, 220, 0, 0.5);
+    -webkit-text-stroke: 1px #f7c15d;
+}
+
+.neon-button.yellow:hover {
+    color: rgb(243,229,102);
+    text-shadow: 0px 0px 30px rgba(253, 220, 0, 1);
+    -webkit-text-stroke: 1px #f7c15d;
+}
+
+.neon-button.blue {
+    color: rgba(0,0,0,0.85);
+    text-shadow: 0px 0px 30px rgba(11, 213, 226, 0.6);
+    -webkit-text-stroke: 1px rgb(0, 187, 211);
+}
+
+.neon-button.blue:hover{
+    color: rgb(11, 213, 226);
+    text-shadow: 0px 0px 30px rgba(11, 213, 226, 1);
+    -webkit-text-stroke: 1px rgb(0, 187, 211);
+}
+
+.neon-button.green {
+    color: rgba(0,0,0,0.85);
+    text-shadow: 0px 0px 20px rgba(187, 235, 89, 0.5);
+    -webkit-text-stroke: 1px rgb(156, 203, 61);
+}
+
+.neon-button.green:hover{
+    color: rgb(187, 235, 89);
+    text-shadow: 0px 0px 30px rgba(187, 235, 89, 1);
+    -webkit-text-stroke: 1px rgb(156, 203, 61);
+}
+
+/* hack-view */
+
+.fa-feature-display{
+    color: rgb(187, 235, 89);
+    text-shadow: 0px 0px 15px rgba(187, 235, 89, 1);
+    -webkit-text-stroke: 1px rgb(156, 203, 61);
+}
+
+.neon-h2{
+    color: rgb(187, 235, 89);
+    text-shadow: 0px 0px 15px rgba(187, 235, 89, 1);
+    -webkit-text-stroke: 1px rgb(156, 203, 61);
+}
+
+@media only screen and (max-width: 400px){
+
+    .fa-feature-display{
+
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .container-top{
+        margin-top:10vh;
+    }
+}
+
